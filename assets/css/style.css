@@ -531,6 +531,13 @@ section .carousel-content{
   padding-top: 20%
 }
 
+@media (max-width: 992px){
+  
+  section .carousel-content{
+    padding-top: 15%;
+    }
+}
+
 /*--------------------------------------------------------------
 # Feature
 --------------------------------------------------------------*/
@@ -573,7 +580,9 @@ section p{
   color: #fff;
 }
 
-/* Section: Requirements */
+/*--------------------------------------------------------------
+# Requirements
+--------------------------------------------------------------*/
 
 section.requirements{
   background-image: url("../img/requirements.png");
@@ -633,10 +642,18 @@ section.requirements h3{
   padding-top: 0.5em;
 }
 
+@media (max-width: 992px){
+
+  section.requirements{
+    height: 158vh;
+  }
+}
 
 /* END OF Section: Requirements */
 
-/* Section: Top Scored */
+/*--------------------------------------------------------------
+# Top Scored
+--------------------------------------------------------------*/
 
 section.top-scores{
   background-image: url("../img/top-score-bg.jpg");
@@ -693,5 +710,72 @@ section.top-scores .card-reviewer:nth-child(2){
   position: relative;
   right: 120px;
 }
+
+@media (max-width: 992px){
+
+  section.top-scores .text-content{
+    padding-top: 3em;
+    text-align: center;
+  }
+
+  section.top-scores .card-reviewer:nth-child(2){
+    position: static;
+  }
+
+  section.top-scores{
+    height: 158vh;
+  }
+  
+}
+
 /* End of Section: Top Scored */
+
+
+/*--------------------------------------------------------------
+# Newsletter Subs
+--------------------------------------------------------------*/
+section.news-letter{
+  background-color: black;
+  max-width: 100%;
+  height: 130vh;
+}
+
+section.news-letter img{
+  position: relative;
+  top: 180px;
+}
+
+section.news-letter .content-subs{
+  padding-top: 15em;
+}
+
+section.news-letter .content-subs h2{
+  letter-spacing: 2px;
+  padding: 0.3em 0;
+  color: #ffffff;
+}
+
+section.news-letter form{
+  margin-top: 2em;
+}
+
+section.news-letter .content-subs input{
+  padding: 0.7em 2em;
+  margin-right: 10px;
+  border: 0px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+section.news-letter .content-subs .main-btn{
+  padding: 0.7em 2em;
+}
+
+@media (max-width: 992px){ 
+  section.news-letter img{
+    display: none;
+  }
+  }
+
 
