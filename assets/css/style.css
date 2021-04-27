@@ -502,6 +502,14 @@ section.requirements h3{
   section.requirements{
     height: 158vh;
   }
+
+  section.requirements .title-requirements h2{
+    font-size: 30px;
+  }
+
+  section.requirements .title-requirements p{
+    font-size: 10px;
+  }
 }
 
 /* END OF Section: Requirements */
