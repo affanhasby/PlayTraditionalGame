@@ -369,8 +369,6 @@ section {
   height: 130vh;
   max-width: 100%;
   margin-top: -2px;
-  
-  
 }
 
 section .title-gameplayoption{
@@ -380,6 +378,11 @@ section .title-gameplayoption{
 
 section .title-gameplayoption h2{
   font-size: 40px;
+  font-weight: bold;
+}
+
+section .title-gameplayoption h3{
+  font-size: 26px;
 }
 
 section .carousel-content{
@@ -390,6 +393,9 @@ section .carousel-content{
   
   section .carousel-content{
     padding-top: 15%;
+    }
+  section .title-gameplayoption h3{
+      font-size: 18px;
     }
 }
 
@@ -420,7 +426,18 @@ section .title-feature{
   padding-top: 50%;
   color: white;
   padding-bottom: 2em;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+section .title-feature h2{
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+section .title-feature h3{
+  color: #fff;
+  font-size: 20px;
 }
 
 section .content h2{
@@ -505,6 +522,16 @@ section p{
   height: 150%;
 }
 
+@media (max-width: 530px){
+
+  section.features .title-feature h3{
+    font-size: 20px;
+  }
+
+  section.features .title-feature h2{
+    font-size: 40px;
+  }
+}
 /*--------------------------------------------------------------
 # Requirements
 --------------------------------------------------------------*/
@@ -544,8 +571,9 @@ section.requirements .title-requirements h2{
   color: white;
   padding-top: 2em;
   letter-spacing: 5px;
-  font-size: 50px;
+  font-size: 40px;
   display: inline-block;
+  font-weight: bold;
 }
 
 section.requirements .title-requirements p{
@@ -574,7 +602,9 @@ section.requirements h3{
   }
 
   section.requirements .title-requirements h2{
-    font-size: 30px;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 1px;
   }
 
   section.requirements .title-requirements p{
@@ -609,7 +639,7 @@ section.top-scores .text-content{
 section.top-scores .text-content h2{
   font-size: 50px;
   color: #ffffff;
-  
+  font-weight: bold;
 }
 
 section.top-scores .text-content p{
@@ -693,6 +723,7 @@ section.news-letter .content-subs h2{
   letter-spacing: 2px;
   padding: 0.3em 0;
   color: #ffffff;
+  font-weight: bold;
 }
 
 section.news-letter form{
