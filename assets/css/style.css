@@ -423,16 +423,86 @@ section .title-feature{
   letter-spacing: 4px;
 }
 
-section .head-text{
-  color: #FFB548;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 26px;
-  font-size: 24px;
+section .content h2{
+  color: #ffc451;
 }
 
 section p{
   color: #fff;
+}
+
+.features .step {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.features .step .v-stepper {
+  position: relative;
+}
+
+.features .step .circle {
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.features .step .line {
+  top: 20px;
+  left: 8px;
+  height: 100%;
+  position: absolute;
+  border-left: 3px solid white;
+}
+
+.features .step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1;
+  /* behind the circle to completely hide */
+}
+
+.features .step .content {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.features .step.completed .circle {
+  visibility: visible;
+  background-color: white;
+  border-color: white;
+}
+
+.features .step.completed .line {
+  border-left: 3px solid white;
+}
+
+.features .step.active .circle {
+  visibility: visible;
+  border-color: white;
+  background-color: transparent;
+}
+
+.features .step.empty .circle {
+  visibility: hidden;
+  /* Hidden */
+}
+
+.features .step.empty .line {
+  top: 0;
+  /* Hidden */
+  height: 150%;
 }
 
 /*--------------------------------------------------------------
@@ -509,6 +579,13 @@ section.requirements h3{
 
   section.requirements .title-requirements p{
     font-size: 10px;
+  }
+}
+
+@media (max-width: 530px){
+
+  section.requirements .title-requirements p{
+    display: none;
   }
 }
 
