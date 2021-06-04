@@ -96,9 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar .one{
-  padding: 0 13rem 0 0;
-}
+
 .navbar a i {
   font-size: 12px;
   line-height: 0;
